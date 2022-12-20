@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator App | Frontend Mentor</title>
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/bundle/app.bundle.js"></script>
+</head>
+<body>
+    <img src="assets/svg/logo.svg" alt="logo" class="logo">
+    <main class="calculator">
+        <section class="calculator__form">
+            <div class="calculator__inputs">
+                <label for="bill" class="calculator__bill">Bill</label>
+                <input type="number" name="bill" id="bill" class="calculator__input" value="100">
+            </div>
+
+            <fieldset class="calculator__select">
+                <legend class="calculator__tip">Select Tip %</legend>
+                    <button class="calculator__button calculator__button--selected">5%</button>
+                    <button class="calculator__button">10%</button>
+                    <button class="calculator__button">15%</button>
+                    <button class="calculator__button">25%</button>
+                    <button class="calculator__button">50%</button>
+                    <input type="number" name="custom" id="custom" class="calculator__input calculator__input--custom" placeholder="Custom">
+            </fieldset>
+
+            <section class="calculator__number">
+                <label for="people" class="calculator__people">Number of people <span class="calculator__alert"></span></label>
+                <input type="number" id="people" class="calculator__input calculator__input--persons" value="5">
+            </section>
+        </section>
+
+        <section class="calculator__price">
+            <div class="calculator__amount">
+                <div class="calculator__content">
+                    <h3 class="calculator__title">Tip Amount</h3>
+                    <p class="calculator__text">/ person</p>
+                </div>
+                <span class="calculator__result calculator__result--amount">$0.00</span>
+            </div>
+
+            <div class="calculator__total">
+                <div class="calculator__content">
+                    <h3 class="calculator__title">Total</h3>
+                    <p class="calculator__text">/ person</p>
+                </div>
+                <span class="calculator__result calculator__result--total">$0.00</span>
+            </div>
+
+            <button class="calculator__reset">Reset</button>
+        </section>
+    </main>
+
+    <footer class="attribution">
+        Challenge by 
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+        . Coded by
+        <a href="https://github.com/dvcode01" target="_blank">David Olivero</a>
+    </footer>
+</body>
+</html>
