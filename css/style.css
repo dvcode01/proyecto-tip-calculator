@@ -201,6 +201,9 @@ body{
     }
 }
 @media (min-width: 930px){
+    .logo{
+        margin: 10rem auto 8rem auto;
+    }
     .calculator{
         width: 90rem;
         padding: 3.2rem 3.2rem 3.2rem 5rem;
